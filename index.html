@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Test</title>
-        <link rel="stylesheet" href="basic.css" />
+        <link rel="stylesheet" href="style.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Sen:regular,700,800"
             rel="stylesheet"
@@ -14,7 +14,7 @@
     <body>
         <div class="main-div">
             <div class="main-container">
-                <div class="screen"></div>
+                <div class="screen"><p id="showData"></p></div>
             </div>
             <div class="keypad-grid">
                 <div class="num-box num-box-row-1 num-box-col-1">
@@ -22,7 +22,7 @@
                         class="num-btn"
                         type="button"
                         value="7"
-                        onclick="hello()"
+                        onclick="userInput('7')"
                     >
                         7
                     </button>
@@ -32,7 +32,7 @@
                         class="num-btn"
                         type="button"
                         value="8"
-                        onclick="hello()"
+                        onclick="userInput('8')"
                     >
                         8
                     </button>
@@ -42,7 +42,7 @@
                         class="num-btn"
                         type="button"
                         value="9"
-                        onclick="hello()"
+                        onclick="userInput('9')"
                     >
                         9
                     </button>
@@ -52,7 +52,7 @@
                         class="num-btn"
                         type="button"
                         value="*"
-                        onclick="hello()"
+                        onclick="userInput('*')"
                     >
                         x
                     </button>
@@ -62,7 +62,7 @@
                         class="num-btn"
                         type="button"
                         value="0"
-                        onclick="hello()"
+                        onclick="reset()"
                     >
                         R
                     </button>
@@ -72,7 +72,7 @@
                         class="num-btn"
                         type="button"
                         value="4"
-                        onclick="hello()"
+                        onclick="userInput('4')"
                     >
                         4
                     </button>
@@ -82,7 +82,7 @@
                         class="num-btn"
                         type="button"
                         value="5"
-                        onclick="hello()"
+                        onclick="userInput('5')"
                     >
                         5
                     </button>
@@ -92,7 +92,7 @@
                         class="num-btn"
                         type="button"
                         value="6"
-                        onclick="hello()"
+                        onclick="userInput('6')"
                     >
                         6
                     </button>
@@ -102,7 +102,7 @@
                         class="num-btn"
                         type="button"
                         value="-"
-                        onclick="hello()"
+                        onclick="userInput('-')"
                     >
                         -
                     </button>
@@ -112,7 +112,7 @@
                         class="num-btn"
                         type="button"
                         value="B"
-                        onclick="hello()"
+                        onclick="backSpace()"
                     >
                         B
                     </button>
@@ -122,7 +122,7 @@
                         class="num-btn"
                         type="button"
                         value="1"
-                        onclick="hello()"
+                        onclick="userInput('1')"
                     >
                         1
                     </button>
@@ -132,7 +132,7 @@
                         class="num-btn"
                         type="button"
                         value="2"
-                        onclick="hello()"
+                        onclick="userInput('2')"
                     >
                         2
                     </button>
@@ -142,7 +142,7 @@
                         class="num-btn"
                         type="button"
                         value="3"
-                        onclick="hello()"
+                        onclick="userInput('3')"
                     >
                         3
                     </button>
@@ -152,7 +152,7 @@
                         class="num-btn"
                         type="button"
                         value="+"
-                        onclick="hello()"
+                        onclick="userInput('+')"
                     >
                         +
                     </button>
@@ -162,7 +162,7 @@
                         class="num-btn"
                         type="button"
                         value="/"
-                        onclick="hello()"
+                        onclick="userInput('/')"
                     >
                         /
                     </button>
@@ -172,7 +172,7 @@
                         class="num-btn"
                         type="button"
                         value="0"
-                        onclick="hello()"
+                        onclick="userInput('0')"
                     >
                         0
                     </button>
@@ -182,7 +182,7 @@
                         class="num-btn"
                         type="button"
                         value="00"
-                        onclick="hello()"
+                        onclick="userInput('00')"
                     >
                         00
                     </button>
@@ -192,7 +192,7 @@
                         class="num-btn"
                         type="button"
                         value="."
-                        onclick="hello()"
+                        onclick="userInput('.')"
                     >
                         .
                     </button>
@@ -202,7 +202,7 @@
                         class="equal-btn"
                         type="button"
                         value="="
-                        onclick="hello()"
+                        onclick="equals()"
                     >
                         =
                     </button>

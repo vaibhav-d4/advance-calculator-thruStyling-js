@@ -108,3 +108,11 @@ body {
     left: 321px;
     top: 346px;
 }
+#showData {
+    font-family: Sen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 10px;
+}
